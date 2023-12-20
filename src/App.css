@@ -1,0 +1,245 @@
+body {
+	background-color: #3a3a3a;
+}
+
+.photo1 {
+	max-width: 100vw;
+	height: 100vh;
+	background-image: url('sittingTitle\ .png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
+}
+.photo2 {
+	width: 100%;
+	height: 120ex;
+	background-image: url('sitting1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* CONTACT PAGE */
+
+* {
+	box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type='email'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+.grey {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+/* Style the container/contact section */
+.container1 {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+	margin-top: 10px;
+	max-width: 80%;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column,
+	input[type='submit'] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+/*MEDIA QUERIES FOR FRONT HOME*/
+
+@media (width: 1440px) {
+	.photo1 {
+		background-size: cover;
+		height: 125ex;
+		background-position: center;
+	}
+}
+@media (width: 1024px) {
+	.photo1 {
+		background-size: cover;
+		height: 95ex;
+		background-position: center;
+	}
+}
+@media (width: 320px) {
+	.photo1 {
+		background-size: cover;
+		height: 95ex;
+		background-position: center;
+	}
+}
+/* iPhone XR */
+@media (width: 414px) {
+	.photo1 {
+		background-size: cover;
+		height: 110ex;
+		background-position: center;
+	}
+}
+/* iPhone 12 Pro */
+@media (width: 390px) {
+	.photo1 {
+		background-size: cover;
+		height: 100ex;
+		background-position: center;
+	}
+}
+/* Samsung Galaxy S8+ */
+@media (width: 360px) {
+	.photo1 {
+		background-size: cover;
+		height: 86ex;
+		background-position: center;
+	}
+}
+/* iPhone 12 Pro */
+@media (width: 375px) {
+	.photo1 {
+		background-size: cover;
+		height: 50ex;
+		background-position: center;
+	}
+}
+/* Samsung Galaxy S20 Ultra */
+@media (width: 412px) {
+	.photo1 {
+		background-size: cover;
+		height: 110ex;
+		background-position: center;
+	}
+}
+/* iPad Mini */
+@media (width: 768px) {
+	.photo1 {
+		background-size: cover;
+		height: 122ex;
+		background-position: center;
+	}
+}
+
+/* iPad Air */
+@media (width: 820px) {
+	.photo1 {
+		background-size: cover;
+		height: 142ex;
+		background-position: center;
+	}
+}
+
+/* Surface Pro 7 */
+@media (width: 2736px) {
+	.photo1 {
+		background-size: cover;
+		height: 100ex;
+		background-position: center;
+	}
+}
+/* Surface Pro 7 Vertical */
+@media (width: 912px) {
+	.photo1 {
+		background-size: cover;
+		height: 80ex;
+		background-position: center;
+	}
+}
+
+/* Surface Duo */
+@media (width: 540px) {
+	.photo1 {
+		background-size: cover;
+		height: 83ex;
+		background-position: center;
+	}
+}
+/* Galaxy Fold */
+@media (width: 280px) {
+	.photo1 {
+		background-size: cover;
+		height: 75ex;
+		background-position: center;
+	}
+}
+/* Galaxy Fold Unfolded */
+@media (width: 717px) {
+	.photo1 {
+		background-size: cover;
+		height: 100ex;
+		background-position: center;
+	}
+}
+
+@media (min-width: 1875px) {
+	.photo1 {
+		background-size: cover;
+		height: 200ex;
+		background-position: center;
+	}
+}
+
+/*Homepage*/
+
+/*.hidden {
+	display: none;
+}8*/
+
+/*ABOUT PAGE*/
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-div {
+	float: left;
+}
+
+.right-div {
+	float: right;
+	width: 50%;
+}
+
+
+
+ 

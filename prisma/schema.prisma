@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+//Set the provider of the datasource block in schema.prisma to match your database: postgresql, mysql, sqlite, sqlserver, mongodb or cockroachdb.
+//Run npx prisma db pull to turn your database schema into a Prisma schema.
+//Run npx prisma generate to generate the Prisma Client. You can then start querying your database.
+datasource db {
+  provider = "sqlserver"
+  url      = env("DATABASE_URL") //this is pointing to the DATABASE_URL within your .env file
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+ 
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  password String @default("")
+  posts Post[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+}
